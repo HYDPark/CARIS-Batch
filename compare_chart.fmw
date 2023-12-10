@@ -4,9 +4,10 @@
 #        "C:\Program Files\FME\fme.exe" C:\Projects\Git\Geotiff\compare_chart.fmw
 #          --SourceDataset_CSV2_3 "C:\Projects\Geotiff\rncpanel.csv"
 #          --SourceDataset_XLSXR "C:\Projects\Geotiff\charts-paper_2023-12-04.xls"
+#          --DestDataset_CSV2 "C:\Projects\Geotiff"
 #          --FME_LAUNCH_VIEWER_APP "YES"
 #    
-#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
 #!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
 #!   ATTR_TYPE_ENCODING="SDF"
 #!   BEGIN_PYTHON=""
@@ -15,15 +16,15 @@
 #!   DESCRIPTION=""
 #!   DESTINATION="NONE"
 #!   DESTINATION_ROUTING_FILE=""
-#!   DOC_EXTENTS="1830.89 459.965"
-#!   DOC_TOP_LEFT="-630.007 -657.464"
+#!   DOC_EXTENTS="6648.06 1068.34"
+#!   DOC_TOP_LEFT="-2247.63 -934.654"
 #!   END_PYTHON=""
 #!   END_TCL=""
 #!   EXPLICIT_BOOKMARK_ORDER="false"
 #!   FME_BUILD_NUM="22623"
 #!   FME_BULK_MODE_THRESHOLD="2000"
-#!   FME_DOCUMENT_GUID="fc6ee748-1803-4e0c-8669-5bc218bdb1e3"
-#!   FME_DOCUMENT_PRIORGUID="7617f0db-3e88-4047-8fab-aa8540140530,6390defa-c757-4a79-a497-8b1c90b7d84d"
+#!   FME_DOCUMENT_GUID="589ae507-fdfa-468a-b1e0-44b5dd8eb916"
+#!   FME_DOCUMENT_PRIORGUID="7617f0db-3e88-4047-8fab-aa8540140530,6390defa-c757-4a79-a497-8b1c90b7d84d,fc6ee748-1803-4e0c-8669-5bc218bdb1e3,d1de1477-6948-4083-98c6-f06f757a2199,a6180c07-aed0-4ec4-9505-3945696f9c47,141d4c07-a12d-43b5-ada6-4a0e205d9ed9"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #!   FME_NAMES_ENCODING="UTF-8"
@@ -33,7 +34,7 @@
 #!   HISTORY=""
 #!   IGNORE_READER_FAILURE="No"
 #!   LAST_SAVE_BUILD="FME(R) 2022.1.1.0 (20220728 - Build 22623 - WIN64)"
-#!   LAST_SAVE_DATE="2023-12-05T08:55:01"
+#!   LAST_SAVE_DATE="2023-12-11T09:12:48"
 #!   LOG_FILE=""
 #!   LOG_MAX_RECORDED_FEATURES="200"
 #!   MARKDOWN_DESCRIPTION=""
@@ -52,10 +53,10 @@
 #!   TITLE=""
 #!   USAGE=""
 #!   USE_MARKDOWN=""
-#!   VIEW_POSITION="-828.133 0"
+#!   VIEW_POSITION="1011.73 312.503"
 #!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   WORKSPACE_VERSION="1"
-#!   ZOOM_SCALE="100"
+#!   ZOOM_SCALE="80"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -166,6 +167,62 @@
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Select the Excel file(s)"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="CSV2"
+#!   DATASET="$(DestDataset_CSV2)"
+#!   KEYWORD="CSV2_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="255"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="csv_existing_file_handling Yes csv_write_field_names firstrow csv_date_output_format ISO"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="csv_type string fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis string fme_rotation string fme_secondary_axis string fme_start_angle string fme_sweep_angle string fme_text_size string fme_text_string varchar(50) fme_type varchar(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP csv_dataset_group csv_existing_file_handling Dataset&quot; &quot;&quot; &quot;GUI CHOICE csv_existing_file_handling Yes%No Overwrite Existing File&quot; Yes &quot;GUI OPTIONAL NAMEDGROUP csv_fields_group csv_write_field_names Fields&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE csv_write_field_names If&lt;space&gt;Writing&lt;space&gt;First&lt;space&gt;Row,firstrow%Yes,yes%No,no Write Field Names Row&quot; firstrow &quot;GUI OPTIONAL NAMEDGROUP csv_types_group csv_date_output_format Types&quot; &quot;&quot; &quot;GUI STRING_OR_LOOKUP_CHOICE_ENCODED csv_date_output_format FME&lt;space&gt;&lt;openparen&gt;auto&lt;space&gt;format&lt;closeparen&gt;,FME%ISO&lt;space&gt;&lt;openparen&gt;auto&lt;space&gt;format&lt;closeparen&gt;,ISO%\&quot;%Y%m%d&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;date&lt;closeparen&gt;,%Y%m%d\&quot;%\&quot;%H%M%S&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;time&lt;closeparen&gt;,%H%M%S\&quot;%\&quot;%H%M%S%z&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;time&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%H%M%S%z\&quot;%\&quot;%Y%m%d%H%M%S&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;datetime&lt;closeparen&gt;,%Y%m%d%H%M%S\&quot;%\&quot;%Y%m%d%H%M%S%z&lt;space&gt;&lt;openparen&gt;FME&lt;space&gt;datetime&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%Y%m%d%H%M%S%z\&quot;%\&quot;%Y-%m-%d&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;date&lt;closeparen&gt;,%Y-%m-%d\&quot;%\&quot;%H:%M:%S&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;time&lt;closeparen&gt;,%H:%M:%S\&quot;%\&quot;%H:%M:%S%Ez&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;time&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%H:%M:%S%Ez\&quot;%\&quot;%Y-%m-%dT%H:%M:%S&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;datetime&lt;closeparen&gt;,%Y-%m-%dT%H:%M:%S\&quot;%\&quot;%Y-%m-%dT%H:%M:%S%Ez&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;datetime&lt;space&gt;with&lt;space&gt;offset&lt;closeparen&gt;,%Y-%m-%dT%H:%M:%S%Ez\&quot;%\&quot;%Y-W%W-%u&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;week&lt;closeparen&gt;,%Y-W%W-%u\&quot;%\&quot;%Y-%j&lt;space&gt;&lt;openparen&gt;ISO&lt;space&gt;ordinal&lt;space&gt;date&lt;closeparen&gt;,%Y-%j\&quot;%\&quot;%Y:%m:%d&lt;space&gt;%H:%M:%S&lt;space&gt;&lt;openparen&gt;Exif&lt;space&gt;datetime&lt;closeparen&gt;,%Y:%m:%d%H:%M:%S\&quot;%\&quot;%d/%m/%Y\&quot;%\&quot;%d.%m.%Y\&quot;%\&quot;%B&lt;space&gt;%e&lt;comma&gt;&lt;space&gt;%Y\&quot;%\&quot;%b-%e-%Y\&quot;%\&quot;%I:%M:%S%p\&quot;%\&quot;%s&lt;space&gt;&lt;openparen&gt;Epoch&lt;space&gt;Time&lt;closeparen&gt;,%s\&quot;%\&quot;%Es&lt;space&gt;&lt;openparen&gt;Unzoned&lt;space&gt;Epoch&lt;space&gt;Time&lt;closeparen&gt;,%Es\&quot; Date Output Format&quot; ISO "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="22623"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="CSV2_OUT_QUALIFY_FIELD_NAMES CSV2_OUT_QUALIFY_FIELD_VALUES CSV2_OUT_FIELD_QUALIFIER_CHARACTER CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER CSV2_OUT_ROW_TERMINATION CSV2_OUT_WRITE_SCHEMA_FILE CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_ATTR_TYPE"
+#!   VALUE="string"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="CSV File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the CSV file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the CSV file"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -554,6 +611,228 @@
 #!   FME_TYPE="fme_decimal(width,decimal)"
 #!   FORMAT="CSV2"
 #! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real64"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="x_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="y_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="z_coordinate"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="real32"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int64"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int32"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int16"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="int8"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint64"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint32"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint16"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="uint8"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="boolean"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="CSV2"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="CSV2"
+#! />
 #! </DATA_TYPES>
 #! <GEOM_TYPES>
 #! <GEOM_TYPE
@@ -766,6 +1045,114 @@
 #!   FME_TYPE="fme_voxel_grid"
 #!   FORMAT="CSV2"
 #! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_map"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="CSV2"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="csv_none"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="CSV2"
+#! />
 #! </GEOM_TYPES>
 #! <FEATURE_TYPES>
 #! <FEATURE_TYPE
@@ -776,8 +1163,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="3"
 #!   FEAT_GEOMTYPE="csv_none"
-#!   POSITION="-601.88121881218808 -501.5"
-#!   BOUNDING_RECT="-601.88121881218808 -501.5 454 71"
+#!   POSITION="-2247.6314122174185 -342.12340623406237"
+#!   BOUNDING_RECT="-2247.6314122174185 -342.12340623406237 454 71"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
 #!   KEYWORD="CSV2_2"
@@ -808,8 +1195,8 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="5"
 #!   FEAT_GEOMTYPE="xlsx_none xlsx_point"
-#!   POSITION="-630.00650006500064 -235"
-#!   BOUNDING_RECT="-630.00650006500064 -235 624.73544325772946 71"
+#!   POSITION="-2199.6126393467634 126.90675687244676"
+#!   BOUNDING_RECT="-2199.6126393467634 126.90675687244676 624.73544325772946 71"
 #!   ORDER="500000000000000"
 #!   COLLAPSED="true"
 #!   KEYWORD="XLSXR_1"
@@ -835,6 +1222,70 @@
 #!     <DEFLINE_PARM PARM_NAME="xlsx_start_row" PARM_VALUE=""/>
 #!     <DEFLINE_PARM PARM_NAME="xlsx_table_settings_group" PARM_VALUE=""/>
 #! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Chart_val"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="34"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3324.2968266068478 133.68189237447928"
+#!   BOUNDING_RECT="3324.2968266068478 133.68189237447928 430 71"
+#!   ORDER="500000000000023"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CHARTVER_ID" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Chart number" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Title" ATTR_TYPE="varchar(90)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Inset chart" ATTR_TYPE="varchar(90)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Type" ATTR_TYPE="varchar(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Scale" ATTR_TYPE="number(9,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Region" ATTR_TYPE="varchar(35)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PANELNUMBER" ATTR_TYPE="uint32" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_dataset_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_date_output_format" PARM_VALUE="ISO"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_existing_file_handling" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_fields_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_types_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_write_field_names" PARM_VALUE="firstrow"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Chart_val_remain"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="35"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3444.758992770393 -669.36799733984469"
+#!   BOUNDING_RECT="3444.758992770393 -669.36799733984469 477.70419325772946 71"
+#!   ORDER="500000000000023"
+#!   COLLAPSED="false"
+#!   KEYWORD="CSV2_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="0"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Chart number" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Title" ATTR_TYPE="varchar(90)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Inset chart" ATTR_TYPE="varchar(90)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Type" ATTR_TYPE="varchar(12)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Scale" ATTR_TYPE="number(9,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Region" ATTR_TYPE="varchar(35)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="New edition date" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Link to chart" ATTR_TYPE="varchar(55)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_dataset_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_date_output_format" PARM_VALUE="ISO"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_existing_file_handling" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="csv_fields_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_types_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="csv_write_field_names" PARM_VALUE="firstrow"/>
+#! </FEATURE_TYPE>
 #! </FEATURE_TYPES>
 #! <FMESERVER>
 #! <READER_DATASETS>
@@ -849,6 +1300,13 @@
 #!   DATASET="CSV2_2/rncpanel.csv"
 #! />
 #! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="CSV2_1"
+#!   OVERRIDE="-CSV2_1_DATASET"
+#!   DATASET="CSV2_1/Geotiff"
+#! />
+#! </WRITER_DATASETS>
 #! </FMESERVER>
 #! <GLOBAL_PARAMETERS>
 #! <GLOBAL_PARAMETER
@@ -861,9 +1319,14 @@
 #!   DEFAULT_VALUE="C:\Projects\Geotiff\charts-paper_2023-12-04.xls"
 #!   IS_STAND_ALONE="false"
 #! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_CSV2 Destination CSV (Comma Separated Value) Folder:"
+#!   DEFAULT_VALUE="C:\Projects\Geotiff"
+#!   IS_STAND_ALONE="false"
+#! />
 #! </GLOBAL_PARAMETERS>
 #! <USER_PARAMETERS
-#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxQcm9qZWN0c1xcR2VvdGlmZlxccm5jcGFuZWwuY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyXzMiLCJwcm9tcHQiOiJTb3VyY2UgQ1NWIChDb21tYSBTZXBhcmF0ZWQgVmFsdWUpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxQcm9qZWN0c1xcR2VvdGlmZlxcY2hhcnRzLXBhcGVyXzIwMjMtMTItMDQueGxzIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFeGNlbCBGaWxlcyIsImZpbHRlciI6WyIqLnhsc3giLCIqLnhsc20iLCIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgMjAwNyIsImZpbHRlciI6WyIqLnhsc3giXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIE1hY3JvIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzbSJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgQmluYXJ5IFdvcmtib29rIC0gV2luZG93cyBPbmx5IiwiZmlsdGVyIjpbIioueGxzYiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgUHJlIDIwMDciLCJmaWx0ZXIiOlsiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1hMU1hSIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxQcm9qZWN0c1xcR2VvdGlmZlxccm5jcGFuZWwuY3N2IiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJDU1YvQ29tcHJlc3NlZCBDU1YvVEVYVCBGaWxlcyIsImZpbHRlciI6WyIqLmNzdiIsIiouZ3oiLCIqLnR4dCJdfSx7ImRlc2NyaXB0aW9uIjoiQ1NWIEZpbGVzIiwiZmlsdGVyIjpbIiouY3N2Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIENTViBGaWxlcyIsImZpbHRlciI6WyIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJUZXh0IEZpbGVzIiwiZmlsdGVyIjpbIioudHh0Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9DU1YyXzMiLCJwcm9tcHQiOiJTb3VyY2UgQ1NWIChDb21tYSBTZXBhcmF0ZWQgVmFsdWUpIEZpbGUocyk6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IkM6XFxQcm9qZWN0c1xcR2VvdGlmZlxcY2hhcnRzLXBhcGVyXzIwMjMtMTItMDQueGxzIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJFeGNlbCBGaWxlcyIsImZpbHRlciI6WyIqLnhsc3giLCIqLnhsc20iLCIqLnhscyJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgMjAwNyIsImZpbHRlciI6WyIqLnhsc3giXX0seyJkZXNjcmlwdGlvbiI6IkV4Y2VsIE1hY3JvIFdvcmtib29rIiwiZmlsdGVyIjpbIioueGxzbSJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgQmluYXJ5IFdvcmtib29rIC0gV2luZG93cyBPbmx5IiwiZmlsdGVyIjpbIioueGxzYiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiRXhjZWwgV29ya2Jvb2sgUHJlIDIwMDciLCJmaWx0ZXIiOlsiKi54bHMiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1hMU1hSIiwicHJvbXB0IjoiU291cmNlIE1pY3Jvc29mdCBFeGNlbCBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiQzpcXFByb2plY3RzXFxHZW90aWZmIiwiaXRlbXNUb1NlbGVjdCI6ImZvbGRlcnMiLCJuYW1lIjoiRGVzdERhdGFzZXRfQ1NWMiIsInByb21wdCI6IkRlc3RpbmF0aW9uIENTViAoQ29tbWEgU2VwYXJhdGVkIFZhbHVlKSBGb2xkZXI6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
 #! >
 #! <PARAMETER_INFO>
 #!     <INFO NAME="SourceDataset_CSV2_3" 
@@ -878,6 +1341,12 @@
 #!   GENERATED_GUI_LINE="true"
 #!   GUI_LINE="GUI MULTIFILE SourceDataset_XLSXR INCLUDE_WEB_BROWSER%Excel_Files(*.xlsx;*.xlsm;*.xls)|*.xlsx;*.xlsm;*.xls|Excel_Workbook_2007(*.xlsx)|*.xlsx|Excel_Macro_Workbook(*.xlsm)|*.xlsm|Excel_Binary_Workbook_-_Windows_Only(*.xlsb)|*.xlsb|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Excel_Workbook_Pre_2007(*.xls)|*.xls|All_files(*)|* Source Microsoft Excel File(s):"
 #! />
+#!     <INFO NAME="DestDataset_CSV2" 
+#!   DEFAULT_VALUE="C:\Projects\Geotiff"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DIRNAME DestDataset_CSV2 Destination CSV (Comma Separated Value) Folder:"
+#! />
 #! </PARAMETER_INFO>
 #! </USER_PARAMETERS>
 #! <COMMENTS>
@@ -891,8 +1360,8 @@
 #!   IDENTIFIER="4"
 #!   TYPE="Inspector"
 #!   VERSION="5"
-#!   POSITION="746.8824688246882 -197.49962499624996"
-#!   BOUNDING_RECT="746.8824688246882 -197.49962499624996 454 71"
+#!   POSITION="3946.4256726874946 -134.76554179461203"
+#!   BOUNDING_RECT="3946.4256726874946 -134.76554179461203 454 71"
 #!   ORDER="500000000000001"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -920,8 +1389,8 @@
 #!   IDENTIFIER="6"
 #!   TYPE="Inspector"
 #!   VERSION="5"
-#!   POSITION="746.8824688246882 -457.7495624956249"
-#!   BOUNDING_RECT="746.8824688246882 -457.7495624956249 454 71"
+#!   POSITION="2745.6890869274998 -863.65379238350158"
+#!   BOUNDING_RECT="2745.6890869274998 -863.65379238350158 454 71"
 #!   ORDER="500000000000002"
 #!   PARMS_EDITED="false"
 #!   ENABLED="true"
@@ -949,8 +1418,8 @@
 #!   IDENTIFIER="9"
 #!   TYPE="AttributeManager"
 #!   VERSION="4"
-#!   POSITION="33.854505211718845 -586.46419797531303"
-#!   BOUNDING_RECT="33.854505211718845 -586.46419797531303 454 71"
+#!   POSITION="-646.88146881468811 -370.24868748687487"
+#!   BOUNDING_RECT="-646.88146881468811 -370.24868748687487 454 71"
 #!   ORDER="500000000000003"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -974,12 +1443,496 @@
 #!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
 #!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
 #! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="12"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="226.73837849489615 39.655524333021077"
+#!   BOUNDING_RECT="226.73837849489615 39.655524333021077 430 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="Chart&lt;space&gt;number STRINGVAL AUTO Inset&lt;space&gt;chart PANEL AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="14"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-540.97763199854217 78.125781257812577"
+#!   BOUNDING_RECT="-540.97763199854217 78.125781257812577 454 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="Chart&lt;space&gt;number"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="18"
+#!   TYPE="StringReplacer"
+#!   VERSION="5"
+#!   POSITION="-1433.2618077853144 -342.12340623406237"
+#!   BOUNDING_RECT="-1433.2618077853144 -342.12340623406237 454 71"
+#!   ORDER="500000000000008"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REP_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PRODUCT_STATUS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SCALE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="GEOMETRY" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CASE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="FIND_TEXT" PARM_VALUE="&lt;space&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH" PARM_VALUE="_FME_NO_OP_"/>
+#!     <XFORM_PARM PARM_NAME="NO_MATCH_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REGEXP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="REPLACE_TEXT" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="STRINGVAL"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringReplacer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="1437.1982377523079 -817.11083415782605"
+#!   BOUNDING_RECT="1437.1982377523079 -817.11083415782605 454 71"
+#!   ORDER="500000000000009"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="WS412"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="WS211"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="NZ7656"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="NZ7625"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="NZ6912"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="NZ6612"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <OUTPUT_FEAT NAME="NZ6153"/>
+#!     <FEAT_COLLAPSED COLLAPSED="10"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <OUTPUT_FEAT NAME="NZ5571"/>
+#!     <FEAT_COLLAPSED COLLAPSED="11"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <OUTPUT_FEAT NAME="NZ5212"/>
+#!     <FEAT_COLLAPSED COLLAPSED="12"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <OUTPUT_FEAT NAME="NZ2685"/>
+#!     <FEAT_COLLAPSED COLLAPSED="13"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <OUTPUT_FEAT NAME="NZ2411"/>
+#!     <FEAT_COLLAPSED COLLAPSED="14"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <OUTPUT_FEAT NAME="NZ681"/>
+#!     <FEAT_COLLAPSED COLLAPSED="15"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="Chart&lt;space&gt;number"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,WS412,WS211,NZ7656,NZ7625,NZ6912,NZ6612,NZ6153,NZ5571,NZ5212,NZ2685,NZ2411,NZ681"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="26"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1982.8304204897977 -503.65379238350158"
+#!   BOUNDING_RECT="1982.8304204897977 -503.65379238350158 430 71"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="Chart&lt;space&gt;number STRINGVAL AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1062.0413157801581 -284.90160486162642"
+#!   BOUNDING_RECT="1062.0413157801581 -284.90160486162642 430 71"
+#!   ORDER="500000000000011"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="New edition date" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="Link to chart" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="STRINGVAL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="PANEL" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="Inset&lt;space&gt;chart PANEL AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="32"
+#!   TYPE="AttributeManager"
+#!   VERSION="4"
+#!   POSITION="2593.7759377593761 133.68189237447928"
+#!   BOUNDING_RECT="2593.7759377593761 133.68189237447928 454 71"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="22623"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <XFORM_ATTR ATTR_NAME="CHARTVER_ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Chart number" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Title" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Inset chart" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Scale" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="Region" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="PANELNUMBER" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="CHARTVER_ID CHARTVER_ID  NO_OP Chart&lt;space&gt;number Chart&lt;space&gt;number  NO_OP Title Title  NO_OP Inset&lt;space&gt;chart Inset&lt;space&gt;chart  NO_OP Type Type  NO_OP Scale Scale  NO_OP Region Region  NO_OP New&lt;space&gt;edition&lt;space&gt;date New&lt;space&gt;edition&lt;space&gt;date  REMOVE Link&lt;space&gt;to&lt;space&gt;chart Link&lt;space&gt;to&lt;space&gt;chart  REMOVE STRINGVAL STRINGVAL  REMOVE PANELNUMBER PANELNUMBER  NO_OP PANEL PANEL  REMOVE"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
+#! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
 #! <FEAT_LINK
-#!   IDENTIFIER="10"
+#!   IDENTIFIER="19"
 #!   SOURCE_NODE="3"
-#!   TARGET_NODE="9"
+#!   TARGET_NODE="18"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -992,9 +1945,9 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="8"
+#!   IDENTIFIER="15"
 #!   SOURCE_NODE="5"
-#!   TARGET_NODE="4"
+#!   TARGET_NODE="14"
 #!   SOURCE_PORT_DESC="-1"
 #!   TARGET_PORT_DESC="fi 0 "
 #!   ENABLED="true"
@@ -1009,9 +1962,189 @@
 #! <FEAT_LINK
 #!   IDENTIFIER="11"
 #!   SOURCE_NODE="9"
-#!   TARGET_NODE="6"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="14"
+#!   TARGET_NODE="12"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="20"
+#!   SOURCE_NODE="18"
+#!   TARGET_NODE="9"
 #!   SOURCE_PORT_DESC="fo 0 OUTPUT"
 #!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="32"
+#!   SOURCE_PORT_DESC="fo 0 JOINED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="32"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 1 UNJOINED_LEFT"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="27"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 1 UNJOINED_LEFT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="31"
+#!   SOURCE_NODE="26"
+#!   TARGET_NODE="35"
+#!   SOURCE_PORT_DESC="fo 1 UNJOINED_LEFT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="12"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 2 UNJOINED_RIGHT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 2 UNJOINED_RIGHT"
+#!   TARGET_PORT_DESC="fi 1 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 LEFT"
 #!   ENABLED="true"
 #!   EXECUTION_IDX="0"
 #!   HIDDEN="false"
@@ -1034,15 +2167,18 @@
 
 FME_PYTHON_VERSION 39
 ARCGIS_COMPATIBILITY ARCGIS_AUTO
-GUI IGNORE SourceDataset_CSV2_2,CSV2_IN_FIELDS_GROUP_CSV2_2,CSV2_IN_DELIMITER_CSV2_2,CSV2_IN_FIELD_NAMES_LINE_CSV2_2,CSV2_IN_DATA_START_LINE_CSV2_2,CSV2_IN_ADVANCED_GROUP_CSV2_2,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2,CSV2_IN_FIELD_NAMES_GROUP_CSV2_2,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2,CSV2_IN_FIELD_VALUES_GROUP_CSV2_2,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2,CSV2_IN_ENCODING_GROUP_CSV2_2,CSV2_IN_ENCODING_CSV2_2,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2,CSV2_IN_READ_SKIPPED_LINES_CSV2_2,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2,SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_READ_RASTER_MODE_XLSXR_1,XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1
+GUI IGNORE SourceDataset_CSV2_2,CSV2_IN_FIELDS_GROUP_CSV2_2,CSV2_IN_DELIMITER_CSV2_2,CSV2_IN_FIELD_NAMES_LINE_CSV2_2,CSV2_IN_DATA_START_LINE_CSV2_2,CSV2_IN_ADVANCED_GROUP_CSV2_2,CSV2_IN_FIELD_SEPARATION_GROUP_CSV2_2,CSV2_IN_SKIP_DUPLICATE_DELIMITERS_CSV2_2,CSV2_IN_FIELD_QUALIFIER_CHARACTER_CSV2_2,CSV2_IN_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_2,CSV2_IN_FIELD_NAMES_GROUP_CSV2_2,CSV2_IN_CASE_SENSITIVE_FIELD_NAMES_CSV2_2,CSV2_IN_ENFORCE_STRICT_SCHEMA_CSV2_2,CSV2_IN_TRIM_FIELD_NAME_WHITESPACE_CSV2_2,CSV2_IN_FIELD_VALUES_GROUP_CSV2_2,CSV2_IN_READ_EMPTY_VALUES_AS_CSV2_2,CSV2_IN_TRIM_FIELD_VALUE_QUALIFIERS_CSV2_2,CSV2_IN_ENCODING_GROUP_CSV2_2,CSV2_IN_ENCODING_CSV2_2,CSV2_IN_PRESERVE_SOURCE_ENCODING_CSV2_2,CSV2_IN_SKIPPED_LINES_GROUP_CSV2_2,CSV2_IN_READ_SKIPPED_LINES_CSV2_2,CSV2_IN_NETWORK_AUTHENTICATION_CSV2_2,SourceDataset_XLSXR_1,XLSXR_IN_ADVANCED_XLSXR_1,XLSXR_IN_SCAN_MAX_FEATURES_XLSXR_1,XLSXR_IN_READ_BLANK_AS_XLSXR_1,XLSXR_IN_EXPAND_MERGED_CELLS_XLSXR_1,XLSXR_IN_READ_RASTER_MODE_XLSXR_1,XLSXR_IN_READ_FORM_CONTROLS_XLSXR_1,XLSXR_IN_NETWORK_AUTHENTICATION_XLSXR_1,DestDataset_CSV2_1,CSV2_OUT_DATASET_GROUP_CSV2_1,CSV2_OUT_EXTENSION_CSV2_1,CSV2_OUT_FIELDS_GROUP_CSV2_1,CSV2_OUT_DELIMITER_CSV2_1,CSV2_OUT_ENCODING_GROUP_CSV2_1,CSV2_OUT_ENCODING_CSV2_1,CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_1,CSV2_OUT_ADVANCED_GROUP_CSV2_1,CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_1,CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_1,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1,CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_1,CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_1,CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1,CSV2_OUT_ROW_TERMINATION_CSV2_1,CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_1,CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_1
 # ============================================================================
 DEFAULT_MACRO SourceDataset_CSV2_3 C:\Projects\Geotiff\rncpanel.csv
 
 DEFAULT_MACRO SourceDataset_XLSXR C:\Projects\Geotiff\charts-paper_2023-12-04.xls
 
+DEFAULT_MACRO DestDataset_CSV2 C:\Projects\Geotiff
+
 # ============================================================================
 INCLUDE [ if {{$(SourceDataset_CSV2_3$encode)} == {}} { puts_real {Parameter 'SourceDataset_CSV2_3' must be given a value.}; exit 1; }; ]
 INCLUDE [ if {{$(SourceDataset_XLSXR$encode)} == {}} { puts_real {Parameter 'SourceDataset_XLSXR' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_CSV2$encode)} == {}} { puts_real {Parameter 'DestDataset_CSV2' must be given a value.}; exit 1; }; ]
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE MULTI_READER
@@ -1052,9 +2188,11 @@ MULTI_READER_GEN_DIRECTIVES{0} DATE_INPUT_FORMAT,ISO,EXPOSE_ATTRS_GROUP,,CSV2_EX
 MULTI_READER_TYPE{1} XLSXR
 MULTI_READER_KEYWORD{1} XLSXR_1
 MULTI_READER_GEN_DIRECTIVES{1} EXPAND_MERGED_CELLS,Yes,READ_RASTER_MODE,None,EXCEL_COL_NAMES,YES,REPLACE_ONLY_NEWLINES_CARRIAGE_RETURNS,YES,READ_FORM_CONTROLS,NONE,TABLELIST,,TRIM_ATTR_NAME_CHARACTERS,,EXPOSE_ATTRS_GROUP,,STRIP_SHEETNAME_SPACES,YES,READ_BLANK_AS,Missing,_MERGE_SCHEMAS,YES,SCHEMA,,CONFIGURATION_DATASET,,XLSXR_EXPOSE_FORMAT_ATTRS,,APPLY_FILTERS,No,CASE_SENSITIVE_FEATURE_TYPES,YES,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,FORCE_DATETIME,NO,SCHEMA_HANDLING_REVISION,2,ALLOW_DOLLAR_SIGNS,YES,USE_CUSTOM_SCHEMA,NO,TRIM_ATTR_NAME_WHITESPACE,Yes,ADVANCED,,SCAN_MAX_FEATURES,1000,CREATE_FEATURE_TABLES_FROM_DATA,Yes,SKIP_EMPTY_ROWS,YES
-WRITER_TYPE NULL
-WRITER_KEYWORD NULL_DEST
-NULL_DEST_DATASET null
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} CSV2
+MULTI_WRITER_KEYWORD{0} CSV2_1
 #! END_WB_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "CSV2_2"
@@ -1258,6 +2396,80 @@ XLSXR_1_GENERATE_FME_BUILD_NUM 22623
 XLSXR_1_DATASET "$(SourceDataset_XLSXR_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
+MACRO WB_KEYWORD "CSV2_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV2 CSV2_1
+# =====================================================================
+# The following GUI line prompts for a folder where the
+# CSV files will be stored
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_CSV2_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER CSV2 CSV2_1
+DEFAULT_MACRO DestDataset_CSV2_1 $(DestDataset_CSV2)
+GUI DIRNAME DestDataset_CSV2_1 Destination CSV (Comma Separated Value) Folder:
+DEFAULT_MACRO CSV2_OUT_DATASET_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_DATASET_GROUP_CSV2_1 CSV2_OUT_EXTENSION_CSV2_1%CSV2_OUT_EXISTING_FILE_HANDLING Dataset
+DEFAULT_MACRO CSV2_OUT_EXTENSION_CSV2_1 csv
+CSV2_1_EXTENSION "$(CSV2_OUT_EXTENSION_CSV2_1)"
+GUI OPTIONAL TEXT CSV2_OUT_EXTENSION_CSV2_1 Extension:
+DEFAULT_MACRO CSV2_OUT_EXISTING_FILE_HANDLING_CSV2_1 Yes
+CSV2_1_EXISTING_FILE_HANDLING "$(CSV2_OUT_EXISTING_FILE_HANDLING_CSV2_1)"
+DEFAULT_MACRO CSV2_OUT_FIELDS_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_FIELDS_GROUP_CSV2_1 CSV2_OUT_DELIMITER_CSV2_1%CSV2_OUT_WRITE_FIELD_NAMES Fields
+DEFAULT_MACRO CSV2_OUT_DELIMITER_CSV2_1 <comma>
+CSV2_1_DELIMITER "$(CSV2_OUT_DELIMITER_CSV2_1)"
+GUI STRING_OR_CHOICE_ENCODED CSV2_OUT_DELIMITER_CSV2_1 ,%;%|%space%tab Delimiter Character:
+DEFAULT_MACRO CSV2_OUT_WRITE_FIELD_NAMES_CSV2_1 firstrow
+CSV2_1_WRITE_FIELD_NAMES "$(CSV2_OUT_WRITE_FIELD_NAMES_CSV2_1)"
+DEFAULT_MACRO CSV2_OUT_ENCODING_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_ENCODING_GROUP_CSV2_1 CSV2_OUT_ENCODING_CSV2_1%CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_1 Encoding
+DEFAULT_MACRO CSV2_OUT_ENCODING_CSV2_1 UTF-8
+CSV2_1_ENCODING "$(CSV2_OUT_ENCODING_CSV2_1)"
+GUI STRING_OR_ENCODING CSV2_OUT_ENCODING_CSV2_1 fme-system%* Character Encoding:
+DEFAULT_MACRO CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_1 Yes
+CSV2_1_WRITE_BOM_FOR_UNICODE "$(CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_1)"
+GUI CHOICE CSV2_OUT_WRITE_BOM_FOR_UNICODE_CSV2_1 Yes%No Write Byte Order Mark for Unicode:
+DEFAULT_MACRO CSV2_OUT_ADVANCED_GROUP_CSV2_1 
+GUI OPTIONAL DISCLOSUREGROUP CSV2_OUT_ADVANCED_GROUP_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_1%CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_1%CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1%CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_1%CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_1%CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1%CSV2_OUT_ROW_TERMINATION_CSV2_1%CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_1 Advanced
+DEFAULT_MACRO CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_1 if_needed
+CSV2_1_QUALIFY_FIELD_NAMES "$(CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_1)"
+GUI LOOKUP_CHOICE CSV2_OUT_QUALIFY_FIELD_NAMES_CSV2_1 Yes,yes%No,no%If<space>Needed,if_needed Qualify Field Names:
+DEFAULT_MACRO CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_1 if_needed
+CSV2_1_QUALIFY_FIELD_VALUES "$(CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_1)"
+GUI ACTIVECHOICE_LOOKUP CSV2_OUT_QUALIFY_FIELD_VALUES_CSV2_1 Yes,yes,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1%No,no%If<space>Needed,if_needed,CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1 Qualify Field Values:
+DEFAULT_MACRO CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1 <Unused>
+CSV2_1_UNQUALIFIED_FIELD_VALUE_HANDLING "$(CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1)"
+GUI LOOKUP_CHOICE CSV2_OUT_UNQUALIFIED_FIELD_VALUE_HANDLING_CSV2_1 Remove<space>Unsafe<space>Characters,remove_unsafe%Preserve<space>Unsafe<space>Characters,preserve_unsafe Unqualified Field Value Handling:
+DEFAULT_MACRO CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_1 Yes
+CSV2_1_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE "$(CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_1)"
+GUI CHOICE CSV2_OUT_TREAT_EMBEDDED_FIELD_QUALIFIERS_AS_UNSAFE_CSV2_1 Yes%No Treat Embedded Field Qualifiers As Unsafe:
+DEFAULT_MACRO CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_CHARACTER "$(CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_1)"
+GUI STRING_ENCODED CSV2_OUT_FIELD_QUALIFIER_CHARACTER_CSV2_1 Field Qualifier Character:
+DEFAULT_MACRO CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 <quote>
+CSV2_1_FIELD_QUALIFIER_ESCAPE_CHARACTER "$(CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1)"
+GUI STRING_ENCODED CSV2_OUT_FIELD_QUALIFIER_ESCAPE_CHARACTER_CSV2_1 Field Qualifier Escape Character:
+DEFAULT_MACRO CSV2_OUT_ROW_TERMINATION_CSV2_1 System
+CSV2_1_ROW_TERMINATION "$(CSV2_OUT_ROW_TERMINATION_CSV2_1)"
+GUI CHOICE CSV2_OUT_ROW_TERMINATION_CSV2_1 System%Windows%Unix%Macintosh Row Termination:
+DEFAULT_MACRO CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_1 NO
+CSV2_1_WRITE_SCHEMA_FILE "$(CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_1)"
+GUI ACTIVEDISCLOSUREGROUP CSV2_OUT_WRITE_SCHEMA_FILE_CSV2_1 FME_DISCLOSURE_CLOSED%CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_1 Write Schema Configuration File
+DEFAULT_MACRO CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_1 <Unused>
+CSV2_1_EXISTING_SCHEMA_FILE_HANDLING "$(CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_1)"
+GUI CHOICE CSV2_OUT_EXISTING_SCHEMA_FILE_HANDLING_CSV2_1 Overwrite%Prepend Existing Schema File Handling:
+DEFAULT_MACRO CSV2_OUT_COORDINATE_SYSTEM_GRANULARITY_CSV2_1 FEATURE_TYPE
+CSV2_1_COORDINATE_SYSTEM_GRANULARITY "$(CSV2_OUT_COORDINATE_SYSTEM_GRANULARITY_CSV2_1)"
+# ============================================================================
+CSV2_1_GENERATE_FME_BUILD_NUM 22623
+CSV2_1_DATASET "$(DestDataset_CSV2_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
 #! END_WB_HEADER
 #! END_HEADER
 
@@ -1275,6 +2487,7 @@ FME_BULK_MODE_THRESHOLD 2000
 LAST_SAVE_BUILD "FME 2022.1.1.0 (20220728 - Build 22623 - WIN64)"
 DEFAULT_MACRO DATASET_KEYWORD_CSV2_2 CSV2_2
 DEFAULT_MACRO DATASET_KEYWORD_XLSXR_1 XLSXR_1
+DEFAULT_MACRO DATASET_KEYWORD_CSV2_1 CSV2_1
 # -------------------------------------------------------------------------
 
 CSV2_2_READER_META_ATTRIBUTES fme_feature_type
@@ -1304,42 +2517,52 @@ CSV2_2_MERGE_DEF CSV2_2::CSV EXACT CSV DEFLINE fme_attribute_reading,defined,CHA
 XLSXR_1_MERGE_DEF XLSXR_1::charts-paper_2023-12-04 EXACT charts-paper_2023-12-04 DEFLINE xlsx_start_row,,xlsx_end_row,,xlsx_apply_filters,No,fme_attribute_reading,defined,Chart<space>number,char<openparen>9<closeparen>,Title,char<openparen>90<closeparen>,Inset<space>chart,char<openparen>90<closeparen>,Type,char<openparen>12<closeparen>,Scale,number<openparen>9<comma>0<closeparen>,Region,char<openparen>35<closeparen>,New<space>edition<space>date,date,Link<space>to<space>chart,char<openparen>55<closeparen>
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "charts-paper_2023-12-04_XLSXR_1 Splitter"    INPUT FEATURE_TYPE charts-paper_2023-12-04    OUTPUT FEATURE_TYPE charts-paper_2023-12-04_XLSXR_1
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_2 Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_2
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * TeeFactory    FACTORY_NAME "CSV_CSV2_2 Splitter"    INPUT FEATURE_TYPE CSV    OUTPUT FEATURE_TYPE CSV_CSV2_2
+FACTORY_DEF * TeeFactory    FACTORY_NAME "charts-paper_2023-12-04_XLSXR_1 Splitter"    INPUT FEATURE_TYPE charts-paper_2023-12-04    OUTPUT FEATURE_TYPE charts-paper_2023-12-04_XLSXR_1
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {Inspector} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
-FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { Inspector_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE charts-paper_2023-12-04_XLSXR_1    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { Inspector }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__    }
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { Inspector_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { Chart<space>number,varchar<openparen>9<closeparen>,Title,varchar<openparen>90<closeparen>,Inset<space>chart,varchar<openparen>90<closeparen>,Type,varchar<openparen>12<closeparen>,Scale,number<openparen>9<comma>0<closeparen>,Region,varchar<openparen>35<closeparen>,New<space>edition<space>date,date,Link<space>to<space>chart,varchar<openparen>55<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer }    INPUT  FEATURE_TYPE charts-paper_2023-12-04_XLSXR_1    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { Chart<space>number }    FIND_TEXT { "<space>" }    REPLACE_TEXT { "" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_OUTPUT          }
 # -------------------------------------------------------------------------
-FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE CSV_CSV2_2    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "REP_ID" "REP_ID" "" "REMOVE" }      ATTR_ACTION { "PANELVER_ID" "PANELVER_ID" "" "REMOVE" }      ATTR_ACTION { "PRODUCT_STATUS" "PRODUCT_STATUS" "" "REMOVE" }      ATTR_ACTION { "SCALE" "SCALE" "" "REMOVE" }      ATTR_ACTION { "GEOMETRY" "GEOMETRY" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+FACTORY_DEF {*} StringReplacerFactory    FACTORY_NAME { StringReplacer_2 }    INPUT  FEATURE_TYPE CSV_CSV2_2    USE_REGEX { NO }    CASE_SENSITIVE { NO }    SOURCE_ATTRIBUTES { STRINGVAL }    FIND_TEXT { "<space>" }    REPLACE_TEXT { "" }    REPLACE_NO_MATCH { "_FME_NO_OP_" }    OUTPUT { OUTPUT FEATURE_TYPE StringReplacer_2_OUTPUT          }
 # -------------------------------------------------------------------------
-# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
-DEFAULT_MACRO WORKSPACE_TEMP_DIR
-INCLUDE [    set safeName "[regsub -all {[^a-zA-Z0-9]} {Inspector_2} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";    puts "MACRO SAFE_FFS_NAME $safeName"; ]
-FACTORY_DEF {*} InspectorFactory    FACTORY_NAME { Inspector_2_Prepper }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    GROUP_ATTRIBUTE __inspector_feature_type_attr__    GROUP_ATTRIBUTE_PREFIX { Inspector_2 }    RASTER_REDUCTION { NoReduction }    POINT_CLOUD_REDUCTION { NO_THINNING }    OUTPUT { RESULT FEATURE_TYPE __viewme__    }
-# Now route all the features into the recorder, changing their
-# feature type to the transformer name so that they view nicely
-DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
-DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
-# [PR#45549] The Data Inspector will limit the maximum number of features
-# it reads on WIN32, so we will correspondingly limit the number of
-# features we record here using the MAX_FEATURES_TO_RECORD directive.
-FACTORY_DEF {*} RecorderFactory    FACTORY_NAME { Inspector_2_Recorder }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT FEATURE_TYPE __viewme__       _wb_termination_feature Yes       @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__       @FeatureType(@Value(__inspector_feature_type_attr__))       @RemoveAttributes(__inspector_feature_type_attr__)    FEATURE_FILE { "$(VISUALIZER_FEATURE_FILE)" }    STORE_SCANNED_SCHEMA YES    NORMALIZE_LIST_ATTRIBUTES_ON_SCHEMA YES    CREATE_SPATIAL_INDEX { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    INSPECTOR { "$(VISUALIZER_CREATE_SPATIAL_INDEX)" }    FSC_SCHEMA { CHARTVER_ID,uint32,STRINGVAL,varchar<openparen>8<closeparen>,PANELNUMBER,uint32,PANEL,varchar<openparen>88<closeparen> }    MODE RECORD    STORE_SCANNED_METADATA    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE StringReplacer_2_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "REP_ID" "REP_ID" "" "REMOVE" }      ATTR_ACTION { "PANELVER_ID" "PANELVER_ID" "" "REMOVE" }      ATTR_ACTION { "PRODUCT_STATUS" "PRODUCT_STATUS" "" "REMOVE" }      ATTR_ACTION { "SCALE" "SCALE" "" "REMOVE" }      ATTR_ACTION { "GEOMETRY" "GEOMETRY" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE StringReplacer_OUTPUT    INPUT RIGHT FEATURE_TYPE AttributeManager_OUTPUT    JOIN_MODE { Inner }    JOIN_KEYS { Chart<space>number STRINGVAL AUTO Inset<space>chart PANEL AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_JOINED        }    OUTPUT { UNJOINED_LEFT FEATURE_TYPE FeatureJoiner_UNJOINED_LEFT        }    OUTPUT { UNJOINED_RIGHT FEATURE_TYPE FeatureJoiner_UNJOINED_RIGHT        }    OUTPUT { <REJECTED> FEATURE_TYPE FeatureJoiner_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner_3 }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE FeatureJoiner_UNJOINED_LEFT    INPUT RIGHT FEATURE_TYPE FeatureJoiner_UNJOINED_RIGHT    JOIN_MODE { Inner }    JOIN_KEYS { Inset<space>chart PANEL AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_3_JOINED        }    OUTPUT { UNJOINED_LEFT FEATURE_TYPE FeatureJoiner_3_UNJOINED_LEFT        }    OUTPUT { UNJOINED_RIGHT FEATURE_TYPE FeatureJoiner_3_UNJOINED_RIGHT        }    OUTPUT { <REJECTED> FEATURE_TYPE FeatureJoiner_3_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_3_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_3_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner_3<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeFilter }    INPUT  FEATURE_TYPE FeatureJoiner_3_UNJOINED_LEFT    OUTPUT { FEATURE_TYPE AttributeFilter_FILTER }
+FACTORY_DEF {*} AttributeFilterFactory FACTORY_NAME AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_FILTER FILTER_ATTRIBUTE { Chart<space>number } FILTER_VALUES { <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> WS412 WS211 NZ7656 NZ7625 NZ6912 NZ6612 NZ6153 NZ5571 NZ5212 NZ2685 NZ2411 NZ681 } PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt> OUTPUT WS412 FEATURE_TYPE AttributeFilter_WS412 OUTPUT WS211 FEATURE_TYPE AttributeFilter_WS211 OUTPUT NZ7656 FEATURE_TYPE AttributeFilter_NZ7656 OUTPUT NZ7625 FEATURE_TYPE AttributeFilter_NZ7625 OUTPUT NZ6912 FEATURE_TYPE AttributeFilter_NZ6912 OUTPUT NZ6612 FEATURE_TYPE AttributeFilter_NZ6612 OUTPUT NZ6153 FEATURE_TYPE AttributeFilter_NZ6153 OUTPUT NZ5571 FEATURE_TYPE AttributeFilter_NZ5571 OUTPUT NZ5212 FEATURE_TYPE AttributeFilter_NZ5212 OUTPUT NZ2685 FEATURE_TYPE AttributeFilter_NZ2685 OUTPUT NZ2411 FEATURE_TYPE AttributeFilter_NZ2411 OUTPUT NZ681 FEATURE_TYPE AttributeFilter_NZ681
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>EMPTY<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>MISSING<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>MISSING<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter <lt>NULL<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_<lt>NULL<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter WS412 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_WS412
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter WS211 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_WS211
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ7656 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ7656
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ7625 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ7625
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ6912 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ6912
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ6612 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ6612
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ6153 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ6153
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ5571 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ5571
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ5212 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ5212
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ2685 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ2685
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ2411 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ2411
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeFilter NZ681 Transformer Output Nuker"   INPUT FEATURE_TYPE AttributeFilter_NZ681
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner_2 }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>    INPUT RIGHT FEATURE_TYPE FeatureJoiner_3_UNJOINED_RIGHT    JOIN_MODE { Inner }    JOIN_KEYS { Chart<space>number STRINGVAL AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { JOINED FEATURE_TYPE FeatureJoiner_2_JOINED        }    OUTPUT { UNJOINED_LEFT FEATURE_TYPE FeatureJoiner_2_UNJOINED_LEFT        }    OUTPUT { <REJECTED> FEATURE_TYPE FeatureJoiner_2_<REJECTED>        }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME FeatureJoiner_2_<Rejected> INPUT FEATURE_TYPE FeatureJoiner_2_<REJECTED>  NO_LOGGING   OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, FeatureJoiner_2<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE FeatureJoiner_JOINED    INPUT  FEATURE_TYPE FeatureJoiner_2_JOINED    INPUT  FEATURE_TYPE FeatureJoiner_3_JOINED    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 3    DEF_VAL_COLUMN 2    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "New<space>edition<space>date" "New<space>edition<space>date" "" "REMOVE" }      ATTR_ACTION { "Link<space>to<space>chart" "Link<space>to<space>chart" "" "REMOVE" }      ATTR_ACTION { "STRINGVAL" "STRINGVAL" "" "REMOVE" }      ATTR_ACTION { "PANEL" "PANEL" "" "REMOVE" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_2_OUTPUT TO CSV2 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Chart_val<closeparen> GEOMETRY    ROUTE FME_GENERIC FeatureJoiner_2_UNJOINED_LEFT TO CSV2 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Chart_val_remain<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
@@ -1349,3 +2572,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYP
 DEFAULT_MACRO FME_LAUNCH_VIEWER_APP NO
 FACTORY_DEF * CreationFactory    FACTORY_NAME VisualizerProcessor   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if {{$(FME_LAUNCH_VIEWER_APP)} == {YES}} {  if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -f FFS \042$theFile\042 & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmedatainspector\042 --visualizer --single-application --delete-on-close --no-source-prompt -d {$(WORKSPACE_TEMP_DIR)} -a ffs -f FFS $filesNoExt & \175; }; }; }; ")
 FACTORY_DEF * TeeFactory    FACTORY_NAME VisualizerCleaner   INPUT FEATURE_TYPE __NUKEME__
+# -------------------------------------------------------------------------
+CSV2_1_DEF Chart_val_remain   csv_existing_file_handling   Yes   csv_write_field_names        firstrow   csv_date_output_format       ISO   "Chart number"               varchar(9)   Title                        varchar(90)   "Inset chart"                varchar(90)   Type                         varchar(12)   Scale                        number(9,0)   Region                       varchar(35)   "New edition date"           date   "Link to chart"              varchar(55)
+# -------------------------------------------------------------------------
+CSV2_1_DEF Chart_val   csv_existing_file_handling   Yes   csv_write_field_names        firstrow   csv_date_output_format       ISO   CHARTVER_ID                  uint32   "Chart number"               varchar(9)   Title                        varchar(90)   "Inset chart"                varchar(90)   Type                         varchar(12)   Scale                        number(9,0)   Region                       varchar(35)   PANELNUMBER                  uint32
