@@ -32,7 +32,7 @@ for ($chartNum = 0; $chartNum -le $Rows - 2; $chartNum++) {
         Write-Host $FilePath
     }
     Else {
-        carisbatch -r ExportChartToTIFF -D 300 -e EXPORT_AREA -d 8 -C "RGB(255,255,255,100)"  -g -p $Objs.panelId[$chartNum] ("hpd://lhsphpd:aE8nmHecqf2b6DzW@DEV41/db?ChartVersionId=" + $Objs.ChartVersionId[$chartNum]) $FilePath
+        carisbatch -r ExportChartToTIFF -D 300 -e EXPORT_AREA -d 8 -C "RGB(255,255,255,100)"  -g -p $Objs.panelId[$chartNum] ("hpd://<USERID>:<PW>@<DBNAME>/db?ChartVersionId=" + $Objs.ChartVersionId[$chartNum]) $FilePath
     }
     
 }

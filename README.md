@@ -3,72 +3,61 @@
 
 
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The purpose of this project is to extract GeoTIFF files that were previously generated from BSB directly from HPD without BSB.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-[](./BSB_con.PNG)
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+Project Scope:
+* Automate GeoTIFF File Extraction Using Caris Batch
+* Create files of the same quality as BSB extraction
+* Improve issues with existing GeoTIFF files
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+First, analyze the BSB file currently in use and check the current extraction setting
+
+BSB File Analysis
+
+<img src=BSB_con.PNG 
+ width="600"
+ height="400"
+/>
+
+### BSB Settings
+
+* resolution : 254dpi
+* Depth of the colormap / bits per pixel :  3 bits = 8 numbers
+* Coordinate system : WGS84 
+* Projection : TM
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-  npm install npm@latest -g
-```
-
-### Installation
+Carisbatch requires the following to run
+* HPD PaperChartBuilder License
+* Oracle Client
+### Running CARIS® Batch
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Oracle connection test
 ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   TNSPING PHPD
 ```
-3. Install NPM packages
+2. Check the batch options
 ```sh
-   npm install
+    carisbatch --run ExportChartToTIFF [options] <input> <output>
 ```
-4. Enter your API in `config.js`
+
+* -r : run
+* -D : dpi / default 300
+* -e : EXPORT_AREA / default SHEET
+* -d : colour-depth / default 24 
+* -C : boundary-colour "RGB(255,255,255,100)"  
+* -g : geospatial
+* -p : panel-number 1 
+
+4. Completed batch code
 ```js
-   const API_KEY = 'ENTER YOUR API';
+carisbatch -r ExportChartToTIFF -D 300 -e EXPORT_AREA -d 24 -C "RGB(255,255,255,100)"  -g -p 1 hpd://<USERID>:<PW>@<DBNAME>/db?ChartVersionId=1234 C:\temp\chart\chart_1234.tif
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
