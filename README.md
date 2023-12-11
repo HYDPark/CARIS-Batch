@@ -11,6 +11,14 @@ Project Scope:
 * Improve issues with existing GeoTIFF files
 
 <!-- GETTING STARTED -->
+## Current GeoTIFF ISSUES
+
+Issues
+* The Tiff chart currently distributed in the [NZ Chart Catalog](https://charts.linz.govt.nz/charts/paper-chart)is not a geographically referenced chart
+* Chart images distributed via LDS do not have a proper color index
+* Neither side has information about image resolution
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
 First, analyze the BSB file currently in use and check the current extraction setting
@@ -33,17 +41,15 @@ BSB File Analysis
 
 Carisbatch requires the following to run
 * HPD PaperChartBuilder License
-* Oracle Client
+* Oracle Client and access permission
 ### Running CARIS® Batch
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
 1. Oracle connection test
-```sh
+```bat
    TNSPING PHPD
 ```
 2. Check the batch options
-```sh
+```bat
     carisbatch --run ExportChartToTIFF [options] <input> <output>
 ```
 
@@ -56,20 +62,89 @@ _Below is an example of how you can instruct your audience on installing and set
 * -p : panel-number 1 
 
 4. Completed batch code
-```js
-carisbatch -r ExportChartToTIFF -D 300 -e EXPORT_AREA -d 24 -C "RGB(255,255,255,100)"  -g -p 1 hpd://<USERID>:<PW>@<DBNAME>/db?ChartVersionId=1234 C:\temp\chart\chart_1234.tif
+```bat
+carisbatch -r ExportChartToTIFF -D 300 -e EXPORT_AREA -d 8 -C "RGB(255,255,255,100)"  -g -p 1 hpd://<USERID>:<PW>@<DBNAME>/db?ChartVersionId=1234 C:\temp\chart\chart_1234.tif
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Extracting Chart Lists
+
+```sql
+Use case:
+How to get the geometry of the $rncpanel features for a given chart/panel?
+
+View: CHART_ATTRIBUTES_VIEW
+get the chartver_id using the chart number
+ex:
+select chartver_id from CHART_ATTRIBUTES_VIEW
+WHERE acronym = 'CHTNUM' and stringval = '4905';
 
 
+chart number =4905
+ID = 13
+panelver_id = 14005
+rep_id = 84152
+foid = QQ 0000071224 00001
+
+
+View: CHART_SHEET_PANEL_VW
+Columns:
+	chartver_id
+	sheetver_id
+	panelver_id
+ex:
+select panelver_id from CHART_SHEET_PANEL_VW
+WHERE chartver_id = '13';
+
+
+
+View:  PANEL_FEATURE_VW
+Columns of interest:  
+	panelver_id   (See above queries)
+	object_acronym   ($rncpanel)
+	rep_id   (need this to extract its geom from another table. See below)
+ex:
+select rep_id from panel_feature_vw
+where object_acronym = '$rncpanel'
+and panelver_id = '14005';
+
+
+
+View: FEATURE_GEOMETRY_VW
+Columns of interest:
+	rep_id
+	LLDG_geom
+	branch_geom   (for those features created after 4, refer to the p_feature_api.getBranchgeometry function)
+ex:
+select LLDG_geom from feature_geometry_vw
+where rep_id = '84152';
+
+
+Function: P_FEATURE_API.getBranchGeometry	
+Input: v_rep_id     (spatial representation id)
+Output: SDO_GEOMETRY    (geometry for the line/area feature)
+
+
+Putting it all together:
+
+select LLDG_geom from feature_geometry_vw
+where rep_id = (
+	select rep_id from panel_feature_vw
+	where object_acronym = '$rncpanel'
+	and panelver_id = (
+		select panelver_id from CHART_SHEET_PANEL_VW
+		WHERE chartver_id = (
+			select chartver_id from CHART_ATTRIBUTES_VIEW
+			WHERE acronym = 'CHTNUM' and stringval = '4905')));
+
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Create a chart list with sql for automated execution and run it on Powershell.
+* `geotiffExport.ps1`
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more details, please refer to the [Caris ticket CSR-44402](https://jira.teledynecaris.com/plugins/servlet/theme/portal/3/CSR-44402)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,15 +153,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [x] GeoTIFF from HPD
+- [x] GeoTIFF georeferencing
+- [x] GeoTIFF colour index
+- [x] Rnc Panel data generation
+- [ ] Cut chart image with Rnc Panel boundary
+- [ ] Automated cut out process
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,11 +182,6 @@ Don't forget to give the project a star! Thanks again!
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -122,9 +189,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Daehyun Park - - dpark@linz.govt.nz
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [Caris Batch](https://github.com/HYDPark/CARIS-Batch)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,16 +200,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [HPD1 and Desktop Solutions 4.1](https://www.teledynecaris.com/docs/6.5/caris%20hpd/changes%20list/index.html#page/HPD%25204%2FHPD_40CHANGES_410.html%23)
+* [Export Chart to TIFF](https://www.teledynecaris.com/docs/6.5/caris%20hpd//index.html#page/CARIS%2520HPD%2520Help%2FCARISBatch%2520HPD%2520Processes.081.30.html%23)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
