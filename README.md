@@ -10,7 +10,7 @@ Project Scope:
 * Create files of the same quality as BSB extraction
 * Improve issues with existing GeoTIFF files
 
-<!-- GETTING STARTED -->
+
 ## Current GeoTIFF ISSUES
 
 Issues
@@ -18,7 +18,7 @@ Issues
 * Chart images distributed via LDS do not have a proper color index
 * Neither side has information about image resolution
 
-<!-- GETTING STARTED -->
+
 ## Getting Started
 
 First, analyze the BSB file currently in use and check the current extraction setting
@@ -143,6 +143,7 @@ where rep_id = (
 
 Create a chart list with sql for automated execution and run it on Powershell.
 * `geotiffExport.ps1`
+* Saved GeoTIFF file location `N:\Projects\GeoTIFF\chart`
 
 _For more details, please refer to the [Caris ticket CSR-44402](https://jira.teledynecaris.com/plugins/servlet/theme/portal/3/CSR-44402)_
 
