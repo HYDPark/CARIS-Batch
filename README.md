@@ -141,9 +141,32 @@ where rep_id = (
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Create a chart list with sql for automated execution and run it on Powershell.
+### 1. Bulk data extraction
+
+1.1 Create a chart list(.xls) with sql for automated execution and run it on Powershell.
 * `geotiffExport.ps1`
-* Saved GeoTIFF file location `N:\Projects\GeoTIFF\chart`
+* Saved GeoTIFF file location `N:\Chart Products\GeoTIFF`
+   
+1.2 Convert the Rnc panel boundaries to GeoDB and use them to clip chart data.
+* `rncpanelBulk.py`
+* Saved GeoTIFF file location `N:\Chart Products\GeoTIFF\chart_Rncpanel`
+  
+1.3 Fix Rnc panel boundaries and re-apply clip function.
+* `rncpanelFix.py`
+* Saved GeoTIFF file location `N:\Chart Products\GeoTIFF\chart_Rncpanel`
+
+
+### 2. Single data extraction
+
+1.1 GeoTIFF single file extraction.
+* `geotiffExpSingle.ps1`
+* `geoTIFFsingleExt.bat`
+* Edit the environment values at the batch file.
+   
+1.2 Rnc Panel clip.
+* `rncpanelSingle.py`
+* `rncpanelSingle.bat`
+* Edit the environment values at the batch file.
 
 _For more details, please refer to the [Caris ticket CSR-44402](https://jira.teledynecaris.com/plugins/servlet/theme/portal/3/CSR-44402)_
 
@@ -154,8 +177,8 @@ _For more details, please refer to the [Caris ticket CSR-44402](https://jira.tel
 - [x] GeoTIFF georeferencing
 - [x] GeoTIFF colour index
 - [x] Rnc Panel data generation
-- [ ] Cut chart image with Rnc Panel boundary
-- [ ] Automated cut out process
+- [x] Cut chart image with Rnc Panel boundary
+- [x] Automated cut out process
 
 <!-- CONTRIBUTING -->
 ## Contributing
